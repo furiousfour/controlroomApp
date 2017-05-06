@@ -1,0 +1,15 @@
+<head>
+  <title>Dragable Marker on Map</title>
+</head>
+
+<body>
+  {{> map}}
+</body>
+
+<template name="map">
+  <div class="map-container">
+    {{> googleMap name="map" options=mapOptions}}
+  </div>
+  Latitude<input type = "text" id="txtLat"/>
+  Longitude<input type = "text" id="txtLong"/>
+</template>
